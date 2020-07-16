@@ -10,61 +10,77 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="folder.css/gusto.css">
 </head>
-<body id="" >
-
-  <nav class="navbar navbar-expand-lg navbar-light ">
-
-    <a class="navbar-brand" href="#">Platzi</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto" >
-        <li class="">
-          <a class="lis active" href="index.html">Inicio </a>
-        </li>
-        <li class="">
-          <a class="lis " href="gusto.html" >Gusto</a>
-        </li>
-        <li class="">
-          <a class="lis" href="#">nada</a>
-        </li>
-        <li class="">
-          <a class="lis" href="#">Disabled</a>
-        </li>
-        <li class="">
-          <a class="lis" href="#" date-color="yellow">Disabled</a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
+<body  >
+<nav  class="navbar navbar-expand-lg navbar-light " id="navbar">
+            <h1 class="text-titulo">Pizza Allo</h1>
+            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon">
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul data-target="dulces"  id="boton" class="navbar-nav ml-auto">
+                    <li class="active" >
+                        <a  href="index.html">
+                            Inicio
+                        </a>
+                    </li>
+                    <li data-target=".dulces">
+                        <a  href="#">
+                            Dulces
+                        </a>
+                    </li>
+                    <li  data-target=".carnes">
+                        <a   class=""  href="#">
+                            Carnes
+                        </a>
+                    </li>
+                    <li  data-target="Favoritas"  class="">
+                        <a class="" href="#">
+                             Favoritas
+                        </a>
+                    </li>
+                    <li data-target="vegetales" class="">
+                        <a  href="#">
+                            Vegetales
+                        </a>
+                    </li>
+                    <!-- <div class="container-sesion"> -->
+                        <li data-target="iniciar section">
+                            <a href="#">
+                                Iniciar sesion
+                            </a>
+                        </li>
+                    <!-- </div> -->
+                </ul>
+                <form class="form-inline my-2 my-lg-0 " id="form">
+                    <input aria-label="Search" class="form-control mr-sm-2" name="name" placeholder="Buscar" type="search-active">
+                    </input>
+                </form>
+            </div>
+        </nav>
 
 <!-- section del cuerpo -->
-<div class="container3">
-   <div class="item level-1">
-     <img src="img/pizza1.jpg" alt="">
+<div class="container3" data-id="dulces">
+   <div class="item level-1 " data-id="dulces" >
+    <div></div>
+     <img src="img/pizza1.jpg" alt="dulces">
    </div>
-   <div class="item level-2">
+   <div class="item level-2"  data-id="dulces">
      <img src="img/pissa3.jpg" alt="">
    </div>
-   <div class="item level-3">
+   <div class="item level-3" data-id="dulces">
      <img src="img/pissa4.jpg" alt="">
    </div>
  
 <!-- segunda fila -->
 
-   <div class="item level-1">
+   <div class="item level-1" data-id="carnes">
      <img src="img/pissa6.jpg" alt="">
    </div>
-   <div class="item level-2">
+   <div class="item level-2" data-id="carnes">
      <img src="img/pissa5.jpg" alt="">
    </div>
-   <div class="item level-3">
+   <div class="item level-3" data-id="carnes">
      <img src="img/pissa7.jpg" alt="">
    </div>
 
@@ -108,6 +124,7 @@
 
 <script src="js/jquery-3.4.1.min.js"></script> 
 <script src="js/bootstrap.min.js"></script> 
-<script src="folder.js/index.js"></script> 
+<script src="folder.js/gusto.js"></script> 
+
 </body>
 </html>

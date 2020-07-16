@@ -87,6 +87,7 @@ form input {
 	border: 2px solid #ccc;
 	text-align: center;
 	margin: auto;
+	background: red;
 }
 
 #correo{
@@ -125,7 +126,7 @@ border-radius: 20px;
  color: #fff;
  margin-top: 100px;
 }
-
+/*
 .container-footer span {
 font-size: 50px;
 margin: 20px;
@@ -133,6 +134,6 @@ position: relative;
 top:50px;
 
  
-}
+}*/
 
 
